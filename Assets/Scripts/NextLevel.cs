@@ -5,8 +5,15 @@ using UnityEngine.SceneManagement;
 
 public class NextLevel : MonoBehaviour
 {
+    private Scene _scene;
+    private void Awake()
+    {
+        _scene = SceneManager.GetActiveScene();
+    }
+
+
    public void StartLevel()
     {
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene(_scene.buildIndex+1);
     }
 }
