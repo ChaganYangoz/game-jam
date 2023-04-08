@@ -14,6 +14,7 @@ public class Boss : MonoBehaviour
     private bool isFacingRight = true;
     private float speed = 12.0f;
     private float attackRange = 1.0f;
+
     void Start()
     {
         rb2D= GetComponent<Rigidbody2D>();
