@@ -5,19 +5,20 @@ using UnityEngine;
 public class PlayerDamage : MonoBehaviour
 {
     public Vector3 attackSet;
-    public float attackRange = 5.0f;
+    public float attackRange = 4.0f;
     public LayerMask attackMask;
-    public float attackDamage = 500.0f;
+    public float attackDamage = 20.0f;
     public void Attack()
     {
         Vector3 pos = transform.position;
         pos += transform.right * attackSet.x;
         pos += transform.up * attackSet.y;
 
-        Collider2D col = Physics2D.OverlapCircle(pos, attackRange, attackMask);
-        if (col != null)
+        Collider2D collider = Physics2D.OverlapCircle(pos, attackRange, attackMask);
+        if (collider != null)
         {
-            col.GetComponent<BossHealth>().TakeDamage(attackDamage);
+            Debug.Log("vurdu");
+            collider.GetComponent<BossHealth>().TakeDamage(attackDamage);
         }
     }
 }

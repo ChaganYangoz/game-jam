@@ -13,7 +13,6 @@ public class BossHealth : MonoBehaviour
         healthBar.Health(health);
     }
 
-
     public void TakeDamage(float damage)
     {
         health = health - damage;
