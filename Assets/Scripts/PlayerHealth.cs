@@ -20,5 +20,9 @@ public class PlayerHealth : MonoBehaviour
             Destroy(gameObject);
         }
     }
-    
+
+    IEnumerator Invisible()
+    {
+        yield return new WaitForSecondsRealtime(0.2f);
+    }
 }
