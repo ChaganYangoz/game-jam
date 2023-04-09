@@ -365,7 +365,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   QnA:
   - Question: "Unity'de karakterin ba\u015Fka bir objeye \xE7arp\u0131\u015Fma kontrol\xFCn\xFC
-      hangi fonksiyonu kullanarak yapabiliriz?"
+      hangi fonksiyonu kullanarak yapabiliriz?      (Unity Dersi)"
     Answers:
     - Update()
     - Awake()
@@ -373,14 +373,15 @@ MonoBehaviour:
     - Start()
     CorrectAnswer: 3
   - Question: "Proje y\xF6netiminde projenin y\xFCr\xFCt\xFClmesine yard\u0131mc\u0131
-      olan ki\u015Filere ne denir?"
+      olan ki\u015Filere ne denir?      (Coursera  Dersi)"
     Answers:
     - "Ara\xE7lar"
     - Kaynaklar
     - Malzemeler
     - "B\xFCt\xE7e"
     CorrectAnswer: 2
-  - Question: "Hangisi sahada problemi dogrulama y\xF6ntemlerinden degildir?"
+  - Question: "Hangisi sahada problemi dogrulama y\xF6ntemlerinden degildir?     
+      (Girisimcilik dersi)"
     Answers:
     - Anket yapmak
     - Dijital reklam yapmak
@@ -388,7 +389,7 @@ MonoBehaviour:
     - "Kullan\u0131c\u0131ya denetmek"
     CorrectAnswer: 3
   - Question: "Bo\u015Fluga hangisi geIir? I ....... live with my grandparents when
-      I was a child."
+      I was a child.      (Ingilizce Ders\u0130)"
     Answers:
     - would
     - am
@@ -719,7 +720,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &354704268
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2036,7 +2037,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1068845498
 RectTransform:
   m_ObjectHideFlags: 0
