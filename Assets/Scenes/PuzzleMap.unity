@@ -178,26 +178,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 61006046652737152, guid: 145c07d78e4332a40bbf42389a7172e5, type: 3}
-      propertyPath: m_Size.y
-      value: 0.8396509
-      objectReference: {fileID: 0}
-    - target: {fileID: 61006046652737152, guid: 145c07d78e4332a40bbf42389a7172e5, type: 3}
-      propertyPath: m_Offset.x
-      value: 0.04106976
-      objectReference: {fileID: 0}
-    - target: {fileID: 61006046652737152, guid: 145c07d78e4332a40bbf42389a7172e5, type: 3}
-      propertyPath: m_Offset.y
-      value: -0.11003789
-      objectReference: {fileID: 0}
-    - target: {fileID: 114889116844108038, guid: 145c07d78e4332a40bbf42389a7172e5, type: 3}
-      propertyPath: wallLayer.m_Bits
-      value: 1152
-      objectReference: {fileID: 0}
-    - target: {fileID: 114889116844108038, guid: 145c07d78e4332a40bbf42389a7172e5, type: 3}
-      propertyPath: groundLayer.m_Bits
-      value: 576
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 145c07d78e4332a40bbf42389a7172e5, type: 3}
 --- !u!1 &895804180
@@ -565,7 +545,9 @@ GameObject:
   - component: {fileID: 1693654661}
   - component: {fileID: 1693654664}
   - component: {fileID: 1693654663}
-  - component: {fileID: 1693654662}
+  - component: {fileID: 1693654667}
+  - component: {fileID: 1693654666}
+  - component: {fileID: 1693654665}
   m_Layer: 6
   m_Name: Tilemap
   m_TagString: Untagged
@@ -588,32 +570,6 @@ Transform:
   m_Father: {fileID: 1404891311}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &1693654662
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1693654660}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -4.516893}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 22, y: 0.9662142}
-  m_EdgeRadius: 0
 --- !u!483693784 &1693654663
 TilemapRenderer:
   m_ObjectHideFlags: 0
@@ -973,6 +929,88 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!19719996 &1693654665
+TilemapCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1693654660}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 1
+  m_Offset: {x: 0, y: 0}
+  m_MaximumTileChangeCount: 1000
+  m_ExtrusionFactor: 0.00001
+--- !u!66 &1693654666
+CompositeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1693654660}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_GeometryType: 0
+  m_GenerationType: 0
+  m_EdgeRadius: 0
+  m_ColliderPaths:
+  - m_Collider: {fileID: 1693654665}
+    m_ColliderPaths:
+    - - X: -110000000
+        Y: -48750000
+      - X: -107812496
+        Y: -50000000
+      - X: 110000000
+        Y: -50000000
+      - X: 110000000
+        Y: -45000000
+      - X: 109375000
+        Y: -40937500
+      - X: 107812496
+        Y: -40000000
+      - X: -110000000
+        Y: -40000000
+  m_CompositePaths:
+    m_Paths:
+    - - {x: 10.99997, y: -5}
+      - {x: 11, y: -4.499998}
+      - {x: 10.9374895, y: -4.093744}
+      - {x: 10.781242, y: -4}
+      - {x: -11, y: -4.000029}
+      - {x: -10.999987, y: -4.8750076}
+      - {x: -10.781243, y: -5}
+  m_VertexDistance: 0.0005
+  m_OffsetDistance: 0.00005
+--- !u!50 &1693654667
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1693654660}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1711182555
 GameObject:
   m_ObjectHideFlags: 3
