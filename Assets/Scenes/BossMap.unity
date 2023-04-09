@@ -903,17 +903,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 1821150211701724, guid: 145c07d78e4332a40bbf42389a7172e5, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4787624443014810, guid: 145c07d78e4332a40bbf42389a7172e5, type: 3}
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4787624443014810, guid: 145c07d78e4332a40bbf42389a7172e5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7.33
+      value: 3.7
       objectReference: {fileID: 0}
     - target: {fileID: 4787624443014810, guid: 145c07d78e4332a40bbf42389a7172e5, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.68
+      value: -3.39
       objectReference: {fileID: 0}
     - target: {fileID: 4787624443014810, guid: 145c07d78e4332a40bbf42389a7172e5, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1214,7 +1218,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 0
   maxHealth: 500
---- !u!114 &1008367831
+--- !u!114 &1008367840
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1227,11 +1231,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attackSet: {x: 0, y: 0, z: 0}
-  attackRange: 2
+  attackRange: 1
   attackMask:
     serializedVersion: 2
-    m_Bits: 2147483647
-  attackDamage: 500
+    m_Bits: 256
+  attackDamage: 10
 --- !u!1 &1140708305
 GameObject:
   m_ObjectHideFlags: 0
@@ -1248,7 +1252,7 @@ GameObject:
   - component: {fileID: 1140708311}
   - component: {fileID: 1140708312}
   - component: {fileID: 1140708313}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Boss
   m_TagString: Boss
   m_Icon: {fileID: 0}
@@ -1417,7 +1421,7 @@ MonoBehaviour:
   attackRange: 1
   attackMask:
     serializedVersion: 2
-    m_Bits: 2147483647
+    m_Bits: 1
   attackDamage: 20
 --- !u!114 &1140708313
 MonoBehaviour:
