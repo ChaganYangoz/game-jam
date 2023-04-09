@@ -6,15 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/MainMap.unity
-    guid: 35b2e49604a1fcf4794951b9b49682b3
+    path: Assets/Scenes/StartScene.unity
+    guid: 5e328f748011d654dae2af25d4567c32
   - enabled: 1
-    path: Assets/Scenes/PlatformMap.unity
-    guid: 79c684aa225004546a3d1a8dd91a4a02
+    path: Assets/Scenes/SampleScene.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Scenes/PuzzleMap.unity
-    guid: 764d97941b1caa446ba1149dc2f97615
-  - enabled: 1
-    path: Assets/Scenes/BossMap.unity
-    guid: 466288ce390904044879cb7536211c44
+    path: Assets/Scenes/EndScene.unity
+    guid: b4153640aa69e774d9b4dda2a62c1c07
   m_configObjects: {}
