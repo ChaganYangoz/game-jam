@@ -3022,7 +3022,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c895390f9ded5554a868c960d28b341b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  backgroundFollow: {fileID: 0}
+  backgroundFollow: {fileID: 1223333295}
   speed: 60
 --- !u!4 &1768539103
 Transform:
