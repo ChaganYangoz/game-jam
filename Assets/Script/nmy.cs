@@ -9,7 +9,7 @@ public class nmy : MonoBehaviour
     public TMP_InputField inputField;
     public TMP_Text textDisplay;
 
-    void nýckname()
+    void nickname()
     {
         // InputField ve Text bileþenlerinin referansýný sakla
         inputField = GetComponent<TMP_InputField>();

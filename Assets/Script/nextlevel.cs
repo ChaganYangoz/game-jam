@@ -10,7 +10,7 @@ public class nextlevel : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
     
-    public void Quýtbutton()
+    public void Quitbutton()
     {
         Application.Quit();
     }
