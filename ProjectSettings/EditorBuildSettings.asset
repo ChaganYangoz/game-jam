@@ -9,8 +9,20 @@ EditorBuildSettings:
     path: Assets/Scenes/StartScene.unity
     guid: 5e328f748011d654dae2af25d4567c32
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: Assets/Scenes/MainMap.unity
+    guid: 35b2e49604a1fcf4794951b9b49682b3
+  - enabled: 1
+    path: Assets/Scenes/PlatformMap.unity
+    guid: 79c684aa225004546a3d1a8dd91a4a02
+  - enabled: 1
+    path: Assets/Scenes/opening.unity
+    guid: 18598210373a7964988a97e5fff1ce4c
+  - enabled: 1
+    path: Assets/Scenes/quiz_game.unity
+    guid: 813b89d35ba0adc4caf639d3a624c1d0
+  - enabled: 1
+    path: Assets/Scenes/BossMap.unity
+    guid: 466288ce390904044879cb7536211c44
   - enabled: 1
     path: Assets/Scenes/EndScene.unity
     guid: b4153640aa69e774d9b4dda2a62c1c07
